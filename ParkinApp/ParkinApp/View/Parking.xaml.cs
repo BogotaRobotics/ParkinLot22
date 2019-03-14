@@ -10,11 +10,10 @@ using Xamarin.Forms.Xaml;
 namespace ParkinApp.View
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class LogIn : ContentPage
+	public partial class Parking : ContentPage
 	{
-		public LogIn ()
+		public Parking ()
 		{
-            NavigationPage.SetHasNavigationBar(this, false);
 			InitializeComponent ();
 		}
 	}

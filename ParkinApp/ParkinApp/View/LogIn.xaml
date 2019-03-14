@@ -1,20 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ParkinApp.View.LogIn">
+             x:Class="ParkinApp.View.LogIn" BackgroundColor="DarkGray">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-            <StackLayout.Padding>
-                <OnPlatform x:TypeArguments="Thickness">
-                    <On Platform="Android" Value="20,20,20,10" />
-                    <On Platform="UWP" Value="100,50,100,20" />
-                </OnPlatform>
-            </StackLayout.Padding>
-            <Label Text="Parqueadero Calle 22" HorizontalOptions="CenterAndExpand"/>
-            <Frame BorderColor="DarkGray" HorizontalOptions="FillAndExpand">
-                <StackLayout>
-                    <Entry Placeholder="Ususario"/>
-                    <Entry Placeholder="Contraseña" IsPassword="True"/>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="50">
+            <Label Text="Parqueadero Calle 22" Style="{DynamicResource Titles}" Margin="0,0,0,70"/>
+            <Frame BorderColor="DarkGray" HorizontalOptions="Center" Padding="30">
+                <StackLayout HorizontalOptions="FillAndExpand" Spacing="15">
+                    <Entry Placeholder="Ususario" Style="{DynamicResource EntryAuto}"/>
+                    <Entry Placeholder="Contraseña" IsPassword="True" Style="{DynamicResource EntryAuto}"/>
+                    <Button Text="Iniciar Sesion" BorderColor="White" TextColor="White"/>
                 </StackLayout>
             </Frame>
         </StackLayout>
