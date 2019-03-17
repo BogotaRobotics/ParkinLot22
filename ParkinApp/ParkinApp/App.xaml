@@ -4,22 +4,23 @@
              x:Class="ParkinApp.App">
     <Application.Resources>
         <Style x:Key="EntryAuto" TargetType="Entry">
-            <Setter Property="WidthRequest">
-                <OnPlatform x:TypeArguments="x:Double">
-                    <On Platform="Android">100</On>
-                    <On Platform="UWP">500</On>
-                </OnPlatform>
-            </Setter>
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+            <Setter Property="Visual" Value="Material"/>
         </Style>
         <Style x:Key="Titles" TargetType="Label">
-            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="TextColor" Value="Black"/>
             <Setter Property="FontSize">
                 <OnPlatform x:TypeArguments="x:Double">
                     <On Platform="UWP" Value="40"/>
                     <On Platform="Android" Value="20"/>
                 </OnPlatform>
             </Setter>
+            <Setter Property="Text" Value="{DynamicResource TitleText}"/>
             <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
         </Style>
+        <x:String x:Key="TitleText">Parqueadero Calle 22</x:String>
     </Application.Resources>
 </Application>
