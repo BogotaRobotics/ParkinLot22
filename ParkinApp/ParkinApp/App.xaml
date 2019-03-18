@@ -22,5 +22,10 @@
             <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
         </Style>
         <x:String x:Key="TitleText">Parqueadero Calle 22</x:String>
+        <Style x:Key="NormalLabel" TargetType="Label">
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="FontFamily" Value="CambriaMath"/>
+        </Style>
     </Application.Resources>
 </Application>

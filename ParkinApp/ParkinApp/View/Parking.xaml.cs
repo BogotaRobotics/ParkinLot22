@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using ParkinApp.ViewModel;
 
 namespace ParkinApp.View
 {
@@ -15,6 +16,8 @@ namespace ParkinApp.View
 		public Parking ()
 		{
 			InitializeComponent ();
-		}
+            ParkingLotViewModel x = new ParkingLotViewModel();
+            this.BindingContext = x;
+        }
 	}
 }

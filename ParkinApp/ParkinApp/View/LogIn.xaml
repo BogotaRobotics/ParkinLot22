@@ -59,7 +59,7 @@
                 <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="20">
                     <Entry Placeholder="Ususario" Style="{DynamicResource EntryAuto}"/>
                     <Entry Placeholder="Contraseña" IsPassword="True" Style="{DynamicResource EntryAuto}"/>
-                    <Button Text="Iniciar Sesion" BorderColor="White" TextColor="White"/>
+                    <Button x:Name="Login" Text="Iniciar Sesion" BorderColor="White" TextColor="White" BackgroundColor="Black" Clicked="Login_Clicked"/>
                 </StackLayout>
             </Frame>
         </Grid>

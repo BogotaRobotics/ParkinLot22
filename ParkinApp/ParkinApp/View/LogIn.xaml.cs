@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using ParkinApp.View;
+
 
 namespace ParkinApp.View
 {
@@ -17,5 +19,10 @@ namespace ParkinApp.View
             NavigationPage.SetHasNavigationBar(this, false);
 			InitializeComponent ();
 		}
-	}
+
+        private async void  Login_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Parking());
+        }
+    }
 }

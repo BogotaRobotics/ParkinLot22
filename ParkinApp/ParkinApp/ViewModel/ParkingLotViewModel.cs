@@ -12,8 +12,20 @@ namespace ParkinApp.ViewModel
 {
     public class ParkingLotViewModel
     {
+        public ObservableCollection<Car> cars = new ObservableCollection<Car>();
         public ParkingLotViewModel()
         {
+            DateTime x = new DateTime(1995, 10, 11, 11, 10, 2);
+            Car a = new Car { LicensePlate = "axfs5456", InputTime = x };
+            cars.Add(a);
+            cars.Add(a);
+            cars.Add(a);
+            cars.Add(a);
+            cars.Add(a);
+            cars.Add(a);
+            cars.Add(a);
+            cars.Add(a);
+            cars.Add(a);
             CarSignUp = new Command<Car>(async (Car) => await CarRegister(Car));
             CarLeaving = new Command<Car>(async (Car) => await TakeCarOut(Car));
             CalculateTime = new Command<Car>(async (Car) => await CalcTime(Car));

@@ -9,12 +9,16 @@
                     <DataTemplate>
                         <Grid ColumnSpacing="10" RowSpacing="10">
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="10"/>
+                                <RowDefinition Height="20"/>
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="5*"/>
                                 <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
                             </Grid.ColumnDefinitions>
+                            <Label Text="{Binding CarPlate}" Grid.Column="0" Grid.Row="0"/>
+                            <Label Text="{Binding Arrival}"/>
+                            <Label Text="{Binding Departure}"/>
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
