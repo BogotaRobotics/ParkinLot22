@@ -16,6 +16,7 @@
                                 <ColumnDefinition Width="1*"/>
                                 <ColumnDefinition Width="1*"/>
                             </Grid.ColumnDefinitions>
+                            <!--Binding require to be updated-->
                             <Label Text="{Binding CarPlate}" Grid.Column="0" Grid.Row="0"/>
                             <Label Text="{Binding Arrival}"/>
                             <Label Text="{Binding Departure}"/>
