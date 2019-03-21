@@ -17,6 +17,7 @@ namespace ParkinApp.View
 		{
 			InitializeComponent ();
             ParkingLotViewModel x = new ParkingLotViewModel();
+            //Added binding context, it should be changed by a resolver. (Autofac)
             this.BindingContext = x;
         }
 	}
