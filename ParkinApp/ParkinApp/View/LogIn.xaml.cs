@@ -16,13 +16,13 @@ namespace ParkinApp.View
 	{
 		public LogIn ()
 		{
-            NavigationPage.SetHasNavigationBar(this, false);
+			NavigationPage.SetHasNavigationBar(this, false);
 			InitializeComponent ();
 		}
 
-        private async void  Login_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Parking());
-        }
-    }
+		private async void  Login_Clicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new Parking());
+		}
+	}
 }
